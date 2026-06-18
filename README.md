@@ -27,7 +27,9 @@ The objective of this project is to:
 This project uses three datasets:
 
 ### 1. GPU Specifications Dataset
+
 Contains:
+
 - GPU Name
 - Memory Size
 - Memory Clock
@@ -39,7 +41,9 @@ Contains:
 - Release Year
 
 ### 2. GPU Benchmark Dataset
+
 Contains:
+
 - G3DMark
 - G2DMark
 - GPU Value
@@ -48,7 +52,9 @@ Contains:
 - Power Performance
 
 ### 3. Graphics API Performance Dataset
+
 Contains:
+
 - OpenCL Score
 - CUDA Score
 - Vulkan Score
@@ -143,11 +149,13 @@ The following preprocessing steps were performed:
 The analysis included:
 
 ### Univariate Analysis
+
 - GPU Memory Distribution
 - GPU Clock Distribution
 - G3DMark Distribution
 
 ### Bivariate Analysis
+
 - Memory Size vs Performance
 - GPU Clock vs Performance
 - Unified Shader vs Performance
@@ -155,10 +163,12 @@ The analysis included:
 - Manufacturer vs Performance
 
 ### Correlation Analysis
+
 - Correlation Heatmap
 - Strongest Performance Predictors
 
 ### Outlier Detection
+
 - Boxplots
 - Distribution Analysis
 - Hardware Performance Extremes
@@ -281,11 +291,11 @@ Created using quartile-based segmentation:
 Balanced distribution:
 
 | Category | Count |
-|----------|--------|
-| Low | 298 |
-| Mid | 285 |
-| High | 293 |
-| Extreme | 289 |
+| -------- | ----- |
+| Low      | 298   |
+| Mid      | 285   |
+| High     | 293   |
+| Extreme  | 289   |
 
 ---
 
@@ -338,6 +348,7 @@ GPU architecture and memory subsystem also contribute significantly.
 ### 7. High-End GPUs Form Most Performance Outliers
 
 Examples include:
+
 - RTX 3090 Ti
 - RTX 4090 Class GPUs
 - Professional Workstation GPUs
@@ -361,10 +372,13 @@ This project serves as the foundation for a separate Machine Learning project.
 Future ML tasks include:
 
 ### Regression
+
 Predict GPU benchmark scores (G3DMark).
 
 ### Classification
+
 Predict GPU performance category:
+
 - Low
 - Mid
 - High
